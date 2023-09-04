@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>WebServer</title>
+    </head>
+    <body>
+    <br/>
+    <form action="u" method="POST" enctype="multipart/form-data">
+		<label for="file">选择文件:</label>
+        <br>
+		<input type="file" name="file"><br>
+		<input type="submit" value="上传">
+	</form>
+    <br/>
+    <br/>
+    <form action="d" method="POST">
+        Filename: <input type="text" name="filename"><br>
+        <input type="submit" value="下载">
+        </form>
+    <br/>
+    <br/>
+    <div  align="left">提示：上传文件时，请设置正确的文件名，且上传文件大小小于 100M</div>
+    <div  align="left">提示：下载文件时，请设置正确的文件名，不支持中文，且文件名中不能含有 #,%,&,+,/,\\,=,?,空格,.,: 等特殊字符</div>
+    </body>
+</html>
+
+
